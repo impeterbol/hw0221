@@ -23,7 +23,7 @@ function start() {
         .then(function (answers) {
             const { name, email, id, office } = answers;
             employees.push(new Emp.Manager(name, id, email, office))
-            console.log(employees)
+            // console.log(employees)
             askAddMoreEmp()
         })
 }
@@ -66,7 +66,7 @@ function addIntern() {
         .then(function (answers) {
             const { name, email, id, school } = answers;
             employees.push(new Emp.Intern(name, id, email, school))
-            console.log(employees)
+            // console.log(employees)
             askAddMoreEmp()
         })
 }
@@ -75,7 +75,7 @@ function addEngineer() {
         .then(function (answers) {
             const { name, email, id, github } = answers;
             employees.push(new Emp.Engineer(name, id, email, github))
-            console.log(employees)
+            // console.log(employees)
             askAddMoreEmp()
         })
 }
